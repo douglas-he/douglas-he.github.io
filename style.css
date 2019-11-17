@@ -1,0 +1,96 @@
+body{ 
+    font-family: 'Inconsolata', monospace;
+    background-color: #fada95;
+}
+#sidebar{
+    border: 10px solid #000000;
+    background-color: #000000;
+    text-align: center;
+    font-size: 20px;
+    position: fixed;
+    width:100%;
+    z-index: 999;
+}
+#cabecalho{
+    background-image: url("sao-bernardo-paisagem.jpg");
+    background-position: 0% 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: sandybrown;
+    margin-right: 0;
+    width: 101%;
+}
+#tabela{
+    max-width: 500px;
+    position: relative;
+    left:53em;
+    top: 3em;
+    z-index: 1;
+    margin-right: 0;
+}
+#Pinfo{
+    height: 30em;
+    text-align: left;
+}
+header h1{
+    font-size: 300%;
+    position: absolute;
+    top:40%;
+    left:2%;
+    white-space: nowrap;
+}
+header h2{
+    padding-left: 80px;
+    position: absolute;
+    top:60%;
+}
+section h3{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#text{
+    text-align: left;
+    font-size: 18px;
+    max-width:60%; 
+    padding-bottom: 10px ; 
+} 
+.box{
+    max-width: 50em;
+    background-color: seashell
+}
+
+#cont{
+    position: absolute; 
+    max-width: 40%;
+    right:0px; 
+    top: 500px;
+}
+aside h3{
+   text-align: center;
+   padding-bottom: 10px;
+}
+aside li{
+    padding-bottom: 3px;
+    font-size: 16px;
+}
+#cur{
+    position: absolute;
+    max-width: 40%;
+    right: 0px;
+    top: 750px;
+}   
+}
+article h3{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#rodape{
+    border: 10px solid #000000;
+    background-color: #000000;
+    text-align: center;
+    font-size: 20px;
+    width:100%;
+    color: #FFFFFF
+}
