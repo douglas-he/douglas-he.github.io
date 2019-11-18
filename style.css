@@ -1,6 +1,7 @@
 body{ 
     font-family: 'Inconsolata', monospace;
     background-color: #fada95;
+    overflow-x: hidden;
 }
 #sidebar{
     border: 10px solid #000000;
@@ -34,7 +35,7 @@ a{
     max-width: 520px;
     max height: 475px;
     position: relative;
-    left:53em;
+    left:52em;
     top: 3em;
     z-index: 1;
     margin-right: 0;
@@ -67,10 +68,14 @@ section h3{
     font-size: 18px;
     max-width:60%; 
     padding-bottom: 10px ; 
+    
 } 
+section p{
+    padding-left: 10px;
+}
 .box{
     max-width: 50em;
-    background-color: seashell
+    background-color: seashell;
 }
 
 #cont{
