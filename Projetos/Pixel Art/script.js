@@ -106,6 +106,7 @@ function trocaCor(){
     cores[i].style.backgroundColor= guardaCor[i];
   }
 }
+
 function geraCor(){
   const hexadecimais = '0123456789ABCDEF';
   let cor1 = '#';
@@ -114,6 +115,7 @@ function geraCor(){
   }
   return cor1;
 }
+
 function qualACor () {
   switch (event.target.id){
     case 'preto':
@@ -141,18 +143,31 @@ function limpar(){
 const but= document.getElementById('random');
 but.addEventListener('click', function() {
   const para = setInterval ( function (){
-    limpar()
+    limpar();
     clearInterval(para);
-    random()
-
+    random();
   }, 10 );
 
 })
+
 function random(){
   const array = document.querySelectorAll ('.quadrado');
-  for( let i = 0 ; array[i] != undefined ; i++){
+
+  for( let i = 0 ; i < 24; i+=5){
     if( Math.floor(Math.random() * 10) < 6){
-      array[Math.floor(Math.random() * (parseInt(contador.innerText) * parseInt(contador.innerText))  )].style.backgroundColor= cor;
+      array[i].style.backgroundColor= cor;
+      array[i+4].style.backgroundColor=cor;
     }
-  }
+    }
+    for( let i = 1 ; i < 24; i+=5){
+      if( Math.floor(Math.random() * 10) < 6){
+        array[i].style.backgroundColor= cor;
+        array[i+2].style.backgroundColor=cor;
+      }
+    }
+    for( let i = 2 ; i < 24; i+=5){
+      if( Math.floor(Math.random() * 10) < 6){
+        array[i].style.backgroundColor= cor;
+      }
+    }
 }
