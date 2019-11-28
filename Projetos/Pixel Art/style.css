@@ -1,0 +1,80 @@
+h1{
+  text-align: center;
+}
+
+#up{
+  margin-right: 5px;
+}
+
+#down{
+  margin-left: 5px;
+}
+
+#contador{
+  display: inline;
+}
+
+td {
+  padding: 0;
+}
+
+#clear{
+  position: absolute;
+  right: 350px;
+  top: 80px;
+  height: 50px;
+}
+
+#box{
+  position: absolute;
+  left: 300px;
+  top: 10px;
+}
+
+#cor{
+  border: solid green 3px;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  right: 200px;
+}
+
+.escolha {
+  width: 50px;
+  height: 50px;
+}
+
+.quadrado {
+  width: 50px;
+  height: 50px;
+
+}
+
+.tabela {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: auto;
+}
+
+#preto {
+  background-color: black;
+}
+
+#azul {
+  background-color: blue;
+}
+
+#amarelo {
+  background-color: yellow;
+}
+
+#rosa {
+  background-color: pink;
+}
+
+#verde{
+  background-color: green;
+}
+#branco{
+  background-color: white;
+}
