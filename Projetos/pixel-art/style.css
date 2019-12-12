@@ -38,19 +38,19 @@ td {
 #cor{
   border: solid green 3px;
   background-color: black;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   right: 200px;
 }
 
 .escolha {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .quadrado {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 
 }
 
@@ -60,10 +60,8 @@ td {
   margin: auto;
 }
 
-#cor8 {
+#cor4 {
   background-color: black;
 }
 
-#cor7{
-  background-color: white;
-}
+

@@ -100,12 +100,8 @@ function trocaCor(){
   cores[1] = document.getElementById('cor2');
   cores[2] = document.getElementById('cor3');
   cores[3] = document.getElementById('cor4');
-  cores[4] = document.getElementById('cor5');
-  cores[5] = document.getElementById('cor6');
-  cores[6] = document.getElementById('cor7');
-  cores[7] = document.getElementById('cor8');
 
-  for(let i = 0 ; i <= 5 ; i++ ){
+  for(let i = 0 ; i <= 2 ; i++ ){
     guardaCor[i]= geraCor();
     cores[i].style.backgroundColor= guardaCor[i];
   }
@@ -114,7 +110,7 @@ function trocaCor(){
 function geraCor(){
   const hexadecimais = '0123456789ABCDEF';
   let cor1 = '#';
-  for (let i = 0; i < 6; i++ ) {
+  for (let i = 0; i < 3; i++ ) {
       cor1 += hexadecimais[Math.floor(Math.random() * 16)];
   }
   return cor1;
@@ -129,14 +125,6 @@ function qualACor () {
     case 'cor3':
       return guardaCor[2];
     case 'cor4':
-      return guardaCor[3];
-    case 'cor5':
-      return guardaCor[4];
-    case 'cor6':
-      return guardaCor[5];
-    case 'cor7':
-      return 'white';
-    case 'cor8':
       return 'black';
     default:
       return 'black';
@@ -145,7 +133,7 @@ function qualACor () {
 function limpar(){
   const array = document.querySelectorAll ('.quadrado');
   for( let i = 0; array[i] != undefined ; i++) {
-    array[i].style.backgroundColor = 'white'
+    array[i].style.backgroundColor = '';
   }
 }
 const but= document.getElementById('random');
@@ -179,3 +167,4 @@ function random(){
       }
     }
 }
+

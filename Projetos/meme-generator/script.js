@@ -6,8 +6,8 @@ window.onload = function() {
     let escreve2 = document.getElementById("texto1");
     let up = document.getElementById('up');
     let down = document.getElementById('down');
-    escreve.style.fontSize = '40px';
-    escreve2.style.fontSize = '40px';
+    escreve.style.fontSize = '30px';
+    escreve2.style.fontSize = '30px';
 
     function criaImagem() {
         let image = document.getElementById('pegarTag');
@@ -37,21 +37,23 @@ window.onload = function() {
             escreve2.innerHTML = texto2.value;
         }
     })
+
     up.addEventListener('click', function() {
 
-        if (parseInt(escreve.style.fontSize) >= 70) {
+        if (parseInt(escreve.style.fontSize) >= 40) {
             alert('Pra que isso tudo de fonte');
         } else {
-            escreve.style.fontSize = (parseInt(escreve.style.fontSize) + 10 + 'px');
-            escreve2.style.fontSize = (parseInt(escreve2.style.fontSize) + 10 + 'px');
+            escreve.style.fontSize = (parseInt(escreve.style.fontSize) + 5 + 'px');
+            escreve2.style.fontSize = (parseInt(escreve2.style.fontSize) + 5 + 'px');
+            if( escreve2.innerHTML != '') escreve.style.marginTop='200px '
         }
     });
     down.addEventListener('click', function() {
         if (parseInt(escreve.style.fontSize) <= 20) {
             alert('Ai não vai dar nem pra ler');
         } else {
-            escreve.style.fontSize = (parseInt(escreve.style.fontSize) - 10 + 'px');
-            escreve2.style.fontSize = (parseInt(escreve2.style.fontSize) - 10 + 'px');
+            escreve.style.fontSize = (parseInt(escreve.style.fontSize) - 5 + 'px');
+            escreve2.style.fontSize = (parseInt(escreve2.style.fontSize) - 5 + 'px');
         }
     })
     let mem1 = document.getElementById('mem1');
