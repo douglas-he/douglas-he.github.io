@@ -1,0 +1,86 @@
+/* * {
+    border: 1px solid red
+} */
+
+body {
+  background: linear-gradient( white , rgb( 211 , 216 , 232 ) );
+  height: 700px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+#esqueceu {
+  font-size: 12px;
+  color: rgb( 156 , 180 , 216 );
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  background-color: rgb( 59 , 89 , 152 );
+  justify-content: space-between;
+  color: white;
+}
+
+#login {
+  width: 40%;
+  margin-top: 10px;
+}
+
+.primeirosInputs {
+  height: 23px;
+  width: 150px;
+  border-radius: 0;
+  border: 1px solid black;
+}
+
+.azul {
+  background-color: rgb( 66 , 103 , 178 );
+  border-color: rgb( 41 , 72 , 125 );
+  color: white;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 40%;
+  margin: 5px;
+}
+
+#botaologindiv {
+  display: flex;
+  align-items: center;
+  padding-right: 0;
+}
+
+#bigbox {
+  display: flex;
+  justify-content: space-around;
+  height: 520px;
+}
+
+#ladoesquerdo {
+  width: 40%;
+  color: rgb( 14 , 56 , 95 );
+  margin-top: 40px;
+}
+
+#ladodireito {
+  margin-top: 40px;
+  width: 30%;
+}
+
+#bigbox input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+#divSuperior {
+  margin: 0;
+}
+
+.form-row > .col , .form-row > [ class *= 'col-' ] {
+  padding-left: 0;
+}

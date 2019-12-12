@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facebook-entre ou cadastre-se</title>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="pikaday.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <script type='text/javascript' src='jquery-3.4.1.min.js'></script>
+    <script type='text/javascript' src='bootstrap.min.js'></script>
+    <script type='text/javascript' src="pikaday.js"></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div id="logo">
+                <img src="logo.png" height="75px" alt="Logo Facebook">
+            </div>
+            <div id="login">
+                <form>
+                    <div id="divSuperior" class="form-row">
+                        <div class="col">
+                            <label>Email ou telefone</label>
+                            <input class="form-control primeirosInputs" type="text">
+                        </div>
+                        <div class="col">
+                            <label>Senha</label>
+                            <input class="form-control primeirosInputs" type="password">
+                            <small id='esqueceu'>Esqueceu a conta?</small>
+                        </div>
+                        <div id="botaologindiv" class="col">
+                            <button class="azul" type="submit">Entrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>
+    </div>
+    <div id="bigbox">
+        <div id="ladoesquerdo">
+            <h3>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h3>
+            <img src="figura.png" height="200px" alt="Conectando Pessoas">
+        </div>
+        <div id="ladodireito">
+            <div>
+                <h1>Abra uma conta</h1>
+                <p>É rápido e fácil.</p>
+            </div>
+            <div>
+                <form>
+                    <div id='nomecompleto' class="form-row">
+                        <div class="col">
+                            <input class="form-control" id="nome" type="text" placeholder="Nome" >
+                        </div>
+                        <div class="col">
+                            <input class="form-control" id="sobrenome" type="text" placeholder="Sobrenome">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input class="form-control" id="emailoupassword" type="text" placeholder="Celular ou email">
+                    </div>
+                    <div class="form-row">
+                        <input class="form-control" id="novasenha" type="password" placeholder="Nova Senha">
+                    </div>
+                    <label>Data de nascimento</label>
+                    <input class="form-control" type="text" id="datepicker" readonly>
+                    <label>Gênero</label>
+                    <div>
+                        <label><input class="option" type="radio" value="Feminino" name="Gênero"> Feminino</label>
+                        <label><input class="option" type="radio" value="Masculino" name="Gênero"> Masculino</label>
+                        <label><input class="option" type="radio" value="Personalizado" name="Gênero"> Personalizado</label>
+                    </div>
+                    <div>
+                        <button class="btn btn-success" type="submit">Cadastre-se</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
