@@ -8,6 +8,7 @@ body {
   background-color: black;
   height: 100%;
   font-family: Lilita One , cursive;
+  justify-content: space-around;
 }
 
 h1 {
@@ -20,7 +21,7 @@ h1 {
   border-bottom: 1px solid black;
 }
 
-#containerAll {
+#informacoes {
   display: flex;
   width: 80%;
   margin: auto;
@@ -28,10 +29,6 @@ h1 {
   background-color: rgb( 237 , 232 , 220 );
   flex-direction: column;
   border: 1px solid white;
-}
-
-head {
-  align-self: flex-start;
 }
 
 #divArticle {
@@ -55,7 +52,7 @@ h4 {
   display: flex;
 }
 
-#icone {
+.icone {
   height: 20px;
   width: 20px;
   padding-left: 3px;
@@ -65,43 +62,18 @@ nav {
   display: inline;
 }
 
-#animaLua {
-  overflow: hidden;
-}
+@media ( max-width : 760px ) {
 
-#lua {
-  height: 90px;
-  position: absolute;
-  top: 0;
-  animation-delay: 3s;
-  animation-name: translating;
-  animation-duration: 5s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-}
-
-#lua:hover {
-  animation-play-state: paused;
-}
-
-@media ( max-width : 760px ) and ( orientation : landscape ) {
-
-  #anuncio {
+  #anuncio , #video , #lua , #severoGif , #texto1 , #estrela {
     display: none;
   }
 
-  #video {
+  .shield {
     display: none;
   }
 
-  #lua {
-    height: 50px;
-  }
-
-  #severoGif {
-    display: none;
+  #informacoes {
+    align-items: center;
   }
 
   h1 {
@@ -116,7 +88,8 @@ nav {
 
   #lados {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
   }
 
   #ladoEsquerdo {
@@ -138,7 +111,7 @@ nav {
   }
 
   #voldemortImagem {
-    max-width: 285px;
+    max-width: 95%;
     max-height: 247px;
     border: 1px solid black;
     align-self: flex-start;
@@ -146,6 +119,7 @@ nav {
 
   #asideTitle {
     font-size: 1.4em;
+    text-align: center;
   }
 
   #asideText {
@@ -159,21 +133,25 @@ nav {
 
   #container1 {
     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media ( max-width : 760px ) and ( orientation : landscape ) {
+
+  #lados {
+    justify-content: space-between;
+    flex-direction: row;
   }
 
-  @keyframes translating {
+  #texto1 {
+    display: block;
+  }
 
-    0% {
-      transform: translate( 0 , 0 );
-    }
-
-    50% {
-      transform: translate( 15em , 30em ) rotate( 360deg );
-    }
-
-    100% {
-      transform: translate( 31em , 0 );
-    }
+  #texto {
+    display: none;
   }
 }
 
@@ -183,15 +161,98 @@ nav {
     cursor: url( 'the-daily-prophet-cursor-wand.png' ), auto;
   }
 
-  #arrumaPropaganda{
+  #animaLua , #animaEstrela {
+    overflow: hidden;
+  }
+
+  #lua , #estrela {
+    height: 90px;
+    position: absolute;
+  }
+
+  .shield {
+    top: 0;
+    animation-name: aparecer;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes aparecer {
+
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #estrela {
+    right: 2%;
+    top: 1%;
+    animation-delay: 2s;
+    animation-name: rodear;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+
+  @keyframes rodear {
+
+    0% {
+      transform: rotate( 0 );
+    }
+
+    100% {
+      transform: rotate( 360deg );
+    }
+  }
+
+  #lua {
+    top: 0;
+    animation-delay: 3s;
+    animation-name: translating;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+
+  #lua:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes translating {
+
+    0% {
+      transform: translate( 0 , 0 );
+    }
+
+    50% {
+      transform: translate( 30em , 30em ) rotate( 360deg );
+    }
+
+    100% {
+      transform: translate( 58em , 0 );
+    }
+  }
+
+  #arrumaPropaganda {
     display: flex;
   }
 
   #anuncio {
+    position: absolute;
+    top: 250px;
+    left: 10px;
     color: white;
-    max-width: 100px;
+    max-width: 7%;
     border: solid white 1px;
-    padding: 3px 3px;
+    padding: 3px;
     animation-delay: 1s;
     animation-duration: 0.3s;
     animation-name: corAnuncio;
@@ -214,13 +275,16 @@ nav {
     cursor: pointer;
   }
 
-  #fuga{
+  #fuga {
     display: none;
   }
 
-  #vassoura {
-    height: 50px;
-    width: 100px;
+  .vassoura {
+    height: 100px;
+  }
+
+  .vassoura:hover {
+    cursor: pointer;
   }
 
   p {
@@ -232,7 +296,9 @@ nav {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 5em;
+    border: none;
+    align-self: center;
   }
 
   @keyframes corTitulo {
@@ -246,7 +312,13 @@ nav {
     }
   }
 
-  #head {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #cabecalho {
     animation-delay: 1s;
     animation-duration: 2s;
     animation-name: corTitulo;
@@ -293,23 +365,12 @@ nav {
     height: 56%;
   }
 
-  #icone:hover {
+  .icone:hover {
     cursor: pointer;
   }
 
-  @keyframes translating {
-
-    0% {
-      transform: translate( 0 , 0 );
-    }
-
-    50% {
-      transform: translate( 30em , 30em ) rotate( 360deg );
-    }
-
-    100% {
-      transform: translate( 55em , 0 );
-    }
+  #texto1 {
+    display: none;
   }
 
   .animaTexto {
@@ -323,7 +384,6 @@ nav {
     background-color: chartreuse;
     animation-name: negrito;
     animation-duration: 4s;
-    animation-fill-mode: forwards;
     animation-timing-function: linear;
   }
 
@@ -348,5 +408,51 @@ nav {
     100% {
       font-weight: 800;
     }
+  }
+
+  .voar {
+    transition: transform linear 2s;
+    animation-name: voa;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes voa {
+
+    0% {
+      transform: scale( 1 , 1 ) translate( 0 , 0 ) rotate( 0 );
+    }
+
+    30% {
+      transform: scale( 2 , 2 ) translate( 30px , -50px ) rotate( 0 );
+    }
+
+    50% {
+      transform: scale( 2 , 2 ) translate( 30px , -15px ) rotate( 0 );
+    }
+
+    60% {
+      transform: scale( 2 , 2 ) translate( 30px , -15px ) rotate( 360deg );
+    }
+
+    75% {
+      transform: scale( 2 , 2 ) translate( 30px , -15px ) skew( -20deg , -20deg );
+    }
+
+    100% {
+      transform: translate( 5000px , -5000px );
+    }
+  }
+}
+
+@media ( min-width : 761px ) and ( max-width : 1000px ) {
+
+  #texto {
+    display: none;
+  }
+
+  #texto1 {
+    display: block;
   }
 }
