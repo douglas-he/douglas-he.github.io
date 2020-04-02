@@ -1,0 +1,138 @@
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.header .searchBar {
+  border-radius: 100px;
+  display: flex;
+  font-size: 110%;
+  height: 40px;
+  justify-content: center;
+  padding: 0.2%;
+  text-align: center;
+  width: 100%;
+}
+
+.maxContain {
+  display: flex;
+  flex-direction: row;
+}
+
+.maxContain .container {
+  background-color: white;
+  border: 1px solid black;
+  height: 100%;
+  margin: 1% 0 0 1%;
+  opacity: 0.75;
+  padding: 5px;
+  width: 20%;
+}
+
+.inputs {
+  appearance: none;
+}
+
+.labels {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.labels:hover {
+  background-color: rgb(97, 88, 88);
+  color: rgb(170, 192, 72);
+  cursor: pointer;
+}
+
+.caixaLupa {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 200%;
+}
+
+.lupa {
+  align-self: center;
+  display: flex;
+  margin: 0.5% 0 0 1%;
+  position: absolute;
+  width: 4.5%;
+}
+
+.lupinha {
+  width: 100%;
+}
+
+.container-input {
+  display: flex;
+  width: 50%;
+}
+
+.container-cart {
+  align-self: flex-end;
+  animation: carrinho 3s linear 1 normal;
+  display: flex;
+  margin: 1% 1% 0 0;
+  width: 12%;
+}
+
+@keyframes carrinho {
+
+  0% {
+    transform: translateX(-1400px);
+  }
+
+  40% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: translateX(-600px) rotate(-45deg);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.carrinhoCart {
+  align-items: center;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.contadorCarrinho {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.numero {
+  background-color: gold;
+  border: 2px solid black;
+  border-radius: 20px;
+  color: black;
+  font-size: 200%;
+  margin-left: 15%;
+  padding: 3%;
+  text-align: center;
+}
+
+.carrinho {
+  width: 100%;
+}
+
+.header .slide {
+  background-color: lawngreen;
+  position: relative;
+  right: 22px;
+}

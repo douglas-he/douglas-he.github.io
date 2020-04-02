@@ -1,0 +1,11 @@
+.payment_pagamento_card {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.payment_pagamento_card p {
+  margin: 0;
+}
