@@ -1,1 +1,1 @@
-the quick brown fox jumped over the lazy dog
+Lista de tarefas utilizando html, css e js puro.

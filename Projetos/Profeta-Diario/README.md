@@ -1,1 +1,1 @@
-the quick brown fox jumped over the lazy dog
+Projeto com objetivo de praticar utilização de animações em css sem bibliotecas e/ou frameworks.
