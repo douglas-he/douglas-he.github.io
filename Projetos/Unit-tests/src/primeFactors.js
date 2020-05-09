@@ -17,7 +17,17 @@
   Para mais informações acerca de fatores primos, acesse esta página:
     -> https://pt.wikipedia.org/wiki/Fator_primo
 */
-
-function primeFactors(number) {}
-
+function primeFactors(number) {
+  const arr = [];
+  if (!Number.isInteger(number)) throw new Error('Não é um número');
+  for (let i = 2; i <= number;) {
+    if (number % i === 0) {
+      number /= i;
+      arr.push(i);
+    } else {
+      i += 1;
+    }
+  }
+  return arr;
+}
 module.exports = primeFactors;
