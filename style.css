@@ -1,0 +1,80 @@
+body {
+  height: 100vh;
+}
+
+* {
+  background-color: black;
+  margin: 0
+}
+
+.profile-picture {
+  height: 200px;
+  border: white 1px solid;
+}
+
+.letter-color {
+  color:wheat;
+  padding: 3px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  height: 100%;
+  justify-content: center;
+}
+
+.link {
+ color:green;
+ padding: 3px;
+}
+
+.liProjects {
+  margin: 6px;
+}
+
+.link:hover {
+  background-color: white;
+ }
+
+.order {
+  width: 50%;
+  padding: 10px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.textInfos {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descricao {
+  margin: 20px 0;
+}
+
+.icon {
+  width: 30%;
+}
+
+.icon:hover {
+  background-color: white;
+}
+
+.liIcon {
+  width: 100%;
+}
+
+.footerUl {
+  display: flex;
+}
+
+.footerIcons { 
+  width:30%
+}
