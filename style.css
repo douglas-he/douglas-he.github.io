@@ -28,6 +28,7 @@ body {
 .link {
  color:green;
  padding: 3px;
+ text-decoration: none;
 }
 
 .liProjects {
