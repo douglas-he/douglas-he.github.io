@@ -60,6 +60,7 @@ body {
 
 .descricao {
   margin: 20px 0;
+  width: 50%;
 }
 
 .icon {
@@ -80,4 +81,10 @@ body {
 
 .footerIcons { 
   width:30%
+}
+
+.containDescription {
+  display: flex;
+ justify-content: center;
+ align-items: center;
 }
