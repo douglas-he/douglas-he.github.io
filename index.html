@@ -1,173 +1,128 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Douglas</title>
-    <link rel="shortcut icon" type="image/x-icon" href="imagens/github.png" />
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <div class="container">
-    <div>
-      <img class="profile-picture" src="imagens/profile.jpeg" alt="profile picture" />
-    </div>
-    <div>
-      <h2 class="letter-color">Douglas Henrique</h2>
-    </div>
-    <div class="textInfos">
-      <div class="containDescription">
-        <h4  class="letter-color descricao">Olá, eu sou o Douglas tenho 22 anos e atualmente sou estudante de desenvolvimento de software na 
-        <a class="link" href="https://www.betrybe.com/">Trybe</a>.<br>Abaixo alguns projetos ja realizados:</h4>
-      </div>
-      <nav class="navContainer">
-        <ul class="letter-color order">
-          <h3>Html-Css-Js</h3>
-          <li class="liProjects">
-            <a target="_blank" class="link" href="https://douglas-he.github.io/Projetos/html-css/">
-              Html-Css
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" class="link" href="https://douglas-he.github.io/Projetos/pixel-art/">
-              Pixel Art
-            </a>
-          </li>
-          <!-- <li class="liProjects">
-            <a target="_blank" class="link" href="https://douglas-he.github.io/Projetos/meme-generator/">
-              Meme Generator
-            </a>
-          </li> -->
-          <li class="liProjects">
-            <a target="_blank" class="link" href="https://douglas-he.github.io/Projetos/todo-list/">
-              Todo List
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" class="link" href="https://douglas-he.github.io/Projetos/Facebook-Sigin/">
-              Facebook Sigin
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" class="link" href="https://douglas-he.github.io/Projetos/Profeta-Diario/">
-              Profeta Diário
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" class="link" href="https://douglas-he.github.io/Projetos/Shopping-cart/">
-              Shopping Cart
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" class="link" href="https://github.com/douglas-he/douglas-he.github.io/tree/master/Projetos/Unit-tests">
-              Unit Tests
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" class="link" href="https://github.com/douglas-he/douglas-he.github.io/tree/master/Projetos/Zoo-Functions">
-              Zoo Functions
-            </a>
-          </li>
-        </ul>
-        <ul class="letter-color order">
-          <h3>React.js</h3>
-          <li class="liProjects">
-            <a target="_blank" href="https://douglas-he.github.io/Movie-Card-Library-Crud/" class="link">
-              Movie Card Library Crud
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://douglas-he.github.io/Frontend-Online-Store/" class="link">
-              Front-end Online Store
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://douglas-he.github.io/Starwars-Database-Redux/" class="link">
-              StarWars Database Redux
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://douglas-he.github.io/Trivia/" class="link">
-              Trivia
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://douglas-he.github.io/Starwars-Database-Context-Hooks/" class="link">
-              StarWars Database Context and Hooks
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://douglas-he.github.io/recipes-app/" class="link">
-              Recipes App - Design Mobile
-            </a>
-          </li>
-        </ul>
-        <ul class="letter-color order">
-          <h3>Back-end</h3>
-          <li class="liProjects">
-            <a target="_blank" href="https://github.com/douglas-he/back-end/tree/master/project-cookmaster" class="link">
-              Cookmaster
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://github.com/douglas-he/back-end/tree/master/a-cli-of-ice-and-fire" class="link">
-              A CLI of Ice and Fire
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://github.com/douglas-he/back-end/tree/master/mongodb-aggregations" class="link">
-              Aggregations
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://github.com/douglas-he/back-end/tree/master/mongodb-commerce" class="link">
-              MongoDB Commerce
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://github.com/douglas-he/back-end/tree/master/mongodb-dataflights" class="link">
-              DataFlights
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://github.com/douglas-he/back-end/tree/master/mysql-all-for-one" class="link">
-              All For One
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://github.com/douglas-he/back-end/tree/master/mysql-vocabulary-booster" class="link">
-              Vocabulary Booster
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://github.com/douglas-he/back-end/tree/master/project-one-for-all" class="link">
-              One For All
-            </a>
-          </li>
-          <li class="liProjects">
-            <a target="_blank" href="https://github.com/douglas-he/back-end/tree/master/project-queries-unite" class="link">
-              Queries Unite
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <footer class="footerIcons">
-        <nav class="footernav">
-          <ul class="footerUl">
-            <li class="liIcon">
-              <a target="_blank" href="https://www.linkedin.com/in/douglas-he/">
-                <img  class="icon" src="imagens/linkedin.png" alt="linkedIn icon"/>
-              </a>
-            </li>
-            <li class="liIcon">
-              <a target="_blank" href="https://github.com/douglas-he">
-                <img class="icon" src="imagens/github.png" alt="github icon" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </footer>
-    </div>
-  </div>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>	
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Projetos</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="frontEnd.html">Front End</a></li>
+									<li class="nav-item"><a class="nav-link" href="backEnd.html">Back End</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="text-uppercase">Ola</h3>
+							<h1 class="text-uppercase">Eu sou o Douglas Henrique</h1>
+							<h5 class="text-uppercase">Desenvolvedor Junior FullStack</h5>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img/banner/home-right.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<a href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+							<h4>Siga me</h4>
+						</div>
+						<div class="footer_social">
+							<a target="_blank" href="https://www.linkedin.com/in/douglas-he/"><i class="fa fa-linkedin"></i></a>
+							<a target="_blank" href="https://github.com/douglas-he"><i class="fa fa-github"></i></a>
+							<a target="_blank" href="https://www.instagram.com/doug.he/"><i class="fa fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
 </body>
+
 </html>
