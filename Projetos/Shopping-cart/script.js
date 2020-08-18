@@ -114,7 +114,7 @@ function fetchArray(url, func) {
 }
 
 function adicionaCarrinho() {
-  fetchArray(`https://api.mercadolibre.com/items/${getSkuFromProductItem(this.parentElement)}`, segundaRequisicao);
+  fetchArray(`https://cors-anywhere.herokuapp.com/https://api.mercadolibre.com/items/${getSkuFromProductItem(this.parentElement)}`, segundaRequisicao);
 }
 
 function deuCerto(response) {
@@ -173,7 +173,7 @@ function RecuperaCookieESession() {
 function inicia() {
   if (localStorage.length > 0) {
     for (let i = 0; i < localStorage.length; i += 1) {
-      const object = JSON.parse(localStorage.getItem(localStorage.key(i)));
+      const object = localStorage.getItem(localStorage.key(i)) ? JSON.parse(localStorage.getItem(localStorage.key(i))) : {};
       const { name, salePrice, sku } = object;
       const addclasse = auxiliaCriação({ sku, name, salePrice });
       addclasse.classList.add(`${localStorage.key(i)}`);
@@ -201,7 +201,7 @@ function exibeItens() {
     animation = ani();
     animation.classList.toggle('progress');
     animation.classList.toggle('animation');
-    fetchArray(`https://api.mercadolibre.com/sites/MLB/search?q=${pesquisa.value}`,
+    fetchArray(`https://cors-anywhere.herokuapp.com/https://api.mercadolibre.com/sites/MLB/search?q=${pesquisa.value}`,
       deuCerto);
   });
 }
